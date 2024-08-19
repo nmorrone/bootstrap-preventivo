@@ -72,9 +72,47 @@
     <section class="content pt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 p-3">
                     <h2>Richiesta Preventivo</h2>
                     <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
+
+                    <form>
+                        <!--campo form nome-->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Il tuo Nome</label>
+                            <input type="text" class="form-control" id="nome" aria-describedby="">
+                        </div>
+                        <!--campo form cognome-->
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Il tuo Cognome</label>
+                            <input type="text" class="form-control" id="cognome" aria-describedby="">
+                        </div>
+                        <!--campo form email-->
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">La tua Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <!--campo selezione tipo di lavoro-->
+                        <div class="mb-3">
+                            <label for="form-select" class="form-label">Tipo di Lavoro</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Scegli il tipo di Lavoro</option>
+                                <option value="1">Sviluppo Backend</option>
+                                <option value="2">Sviluppo Frontend</option>
+                                <option value="3">Analisi Progettuale</option>
+                            </select>
+                            <div class="form-text">Il prezzo orario varia in base al lavoro
+                                selezionato</div>
+                        </div>
+                        <!--campo testo libero-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Forniscici maggiori dettagli..</label>
+                        </div>
+                    </form>
 
                 </div>
                 <div class="col-lg-4">
