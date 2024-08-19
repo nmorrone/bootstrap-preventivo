@@ -15,3 +15,17 @@ h1 {
     font-size: 24px;
     color: #fff;
 }
+
+.card {
+    margin: 0;
+}
+
+.contacts-tabs {
+    border: solid 1px #e7e7e7;
+}
+
+a {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: black;
+}
