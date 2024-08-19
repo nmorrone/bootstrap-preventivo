@@ -76,7 +76,7 @@
                     <h2>Richiesta Preventivo</h2>
                     <p>Compila il form per richiedere un preventivo per i nostri servizi di sviluppo</p>
 
-                    <form>
+                    <form action="post">
                         <!--campo form nome-->
                         <div class="mb-3">
                             <label for="name" class="form-label">Il tuo Nome</label>
@@ -84,14 +84,13 @@
                         </div>
                         <!--campo form cognome-->
                         <div class="mb-3">
-                            <label for="name" class="form-label">Il tuo Cognome</label>
+                            <label for="cognome" class="form-label">Il tuo Cognome</label>
                             <input type="text" class="form-control" id="cognome" aria-describedby="">
                         </div>
                         <!--campo form email-->
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">La tua Email</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                            <label for="email" class="form-label">La tua Email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
 
                         </div>
                         <!--campo selezione tipo di lavoro-->
@@ -111,7 +110,33 @@
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                 style="height: 100px"></textarea>
                             <label for="floatingTextarea2">Forniscici maggiori dettagli..</label>
+
                         </div>
+
+                        <!--codice sconto promozionale-->
+                        <div class="mb-3">
+                            <label for="coupon" class="form-label">Inserisci un Coupon (facoltativo)</label>
+                            <input type="text" class="form-control" id="coupon" aria-describedby="">
+                        </div>
+
+                        <!--trattamento dati personali checkbox-->
+                        <div class="form-check mb-4">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                <span style="color: red">*</span> Dichiaro di aver letto ed accettato il <a
+                                    href="#">Trattamento dei dati Personali</a>
+                            </label>
+                        </div>
+
+                        <!--bottone invio-->
+                        <div class="d-flex flex-row justify-content-around">
+                            <div class=""><button type="submit" class="btn btn-dark">Calcola
+                                    Preventivo</button></div>
+                            <div class="">
+                                <p><strong>Il Prezzo finale è:</strong></p>
+                            </div>
+                        </div>
+
                     </form>
 
                 </div>
