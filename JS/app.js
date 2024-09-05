@@ -22,6 +22,9 @@ const hoursElement = document.getElementById('number')
 
 const couponElement = document.getElementById('coupon')
 
+//recupero elemento HTML per il risultato
+const resultElement = document.getElementById('result')
+
 /* creo l'array contentente tutti i codici coupon
 che l'utente potrebbe inserire per lo sconto */
 
@@ -72,6 +75,15 @@ formElement.addEventListener('submit', function (event) {
     //verifico funzionamento
     console.log(price)
 
+    //inserisco condizione coupon
+    if (coupons.includes(coupon)) {
+
+        price = price - (price / 100 * 25)
+    }
+
+    console.log(price)
+
+    resultElement.innerHTML = 'Il Prezzo Finale è: <br>' + price
 
 }
 )
