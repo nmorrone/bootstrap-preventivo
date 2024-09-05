@@ -71,14 +71,14 @@ formElement.addEventListener('submit', function (event) {
     console.log(selectedWork)
 
     //calcolo la bozza del prezzo senza coupon
-    price = selectedWork * numberHours
+    price = (selectedWork * numberHours).toFixed(2)
     //verifico funzionamento
     console.log(price)
 
     //inserisco condizione coupon
     if (coupons.includes(coupon)) {
 
-        price = price - (price / 100 * 25)
+        price = (price - (price / 100 * 25)).toFixed(2)
     }
 
     console.log(price)
